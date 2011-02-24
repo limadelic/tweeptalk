@@ -10,6 +10,16 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] rspec-core (v2.5.1, C:/Program Files (x86)/Ruby/lib/ruby/gems/1.9.1/gems/rspec-core-2.5.1)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] rspec-expectations (v2.5.0, C:/Program Files (x86)/Ruby/lib/ruby/gems/1.9.1/gems/rspec-expectations-2.5.0)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] rspec-mocks (v2.5.0, C:/Program Files (x86)/Ruby/lib/ruby/gems/1.9.1/gems/rspec-mocks-2.5.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] twitter (v1.1.2, C:/Program Files (x86)/Ruby/lib/ruby/gems/1.9.1/gems/twitter-1.1.2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] multipart-post (v1.1.0, C:/Program Files (x86)/Ruby/lib/ruby/gems/1.9.1/gems/multipart-post-1.1.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rack (v1.2.1, C:/Program Files (x86)/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.2.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] faraday (v0.5.5, C:/Program Files (x86)/Ruby/lib/ruby/gems/1.9.1/gems/faraday-0.5.5)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] hashie (v1.0.0, C:/Program Files (x86)/Ruby/lib/ruby/gems/1.9.1/gems/hashie-1.0.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] multi_xml (v0.2.1, C:/Program Files (x86)/Ruby/lib/ruby/gems/1.9.1/gems/multi_xml-0.2.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] faraday_middleware (v0.3.2, C:/Program Files (x86)/Ruby/lib/ruby/gems/1.9.1/gems/faraday_middleware-0.3.2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] addressable (v2.2.4, C:/Program Files (x86)/Ruby/lib/ruby/gems/1.9.1/gems/addressable-2.2.4)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] multi_json (v0.0.5, C:/Program Files (x86)/Ruby/lib/ruby/gems/1.9.1/gems/multi_json-0.0.5)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] simple_oauth (v0.1.4, C:/Program Files (x86)/Ruby/lib/ruby/gems/1.9.1/gems/simple_oauth-0.1.4)" level="application" />
   </component>
 </module>
 

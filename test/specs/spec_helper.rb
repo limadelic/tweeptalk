@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'rr'
-require "rspec"
+require 'rspec'
+require 'twitter'
 require File.dirname(__FILE__) + '/../../lib/tweeptalk'
 
 RSpec.configure do |c|
