@@ -4,55 +4,35 @@ describe "Conversation" do
 
   before(:each) do
 
-    @tweet = Hashie::Mash.new
-    @tweet.id = 1
+    @root = Hashie::Mash.new
+    @root.id = 1
 
     @reply = Hashie::Mash.new
     @reply.id = 2
     @reply.in_reply_to_status_id = 1
 
-    @dud = Hashie::Mash.new
-    @dud.in_reply_to_status_id = 0
-
     @reply_to_reply = Hashie::Mash.new
     @reply_to_reply.in_reply_to_status_id = 2
 
-    @twitter = TweepTalk::Twitter.new
-    stub(@twitter).replies(anything) { [] }
+    @twitter = Twitter::Client.new
 
   end
 
-  it "should start from replies n' get to tweet" do
-    pending "next Wed"
+  def tweet
+    t = Hashie::Mash.new
+    t.id = 0
+    t
   end
 
-  it "should include the replies to the tweet" do
-
+  it "should find 2 tweet convo" do
     sut = TweepTalk::Convos.new @twitter
 
-    stub(@twitter).replies(@tweet) { [@reply] }
+    mock(@twitter).home_timeline { [tweet, @reply, tweet, @root] }
 
-    sut.convo_from(@tweet).should == [@tweet, @reply]
-  end
+    convos = sut.convos
 
-  it "should include the replies to the replies" do
-
-    sut = TweepTalk::Convos.new @twitter
-
-    stub(@twitter).replies(@tweet) { [@reply] }
-    stub(@twitter).replies(@reply) { [@reply_to_reply] }
-
-    sut.convo_from(@tweet).should == [@tweet, @reply, @reply_to_reply]
-  end
-
-  it "should find replies to a tweet" do
-
-    api = Twitter::Client.new
-    sut = TweepTalk::Twitter.new api
-
-    mock(api).home_timeline { [@dud, @reply, @dud] }
-
-    sut.replies(@tweet).should == [@reply]
+    convos.count.should == 1
+    convos[0].should == [@reply, @root]
   end
 
   it "should get the home tweets" do
