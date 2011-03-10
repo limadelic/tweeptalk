@@ -11,22 +11,38 @@ module TweepTalk
     end
 
     def convos
-      result = []
+      @convos = []
 
-      @twitter.home_timeline.each do |t|
-        puts t
-        thread = result.find {|x| x.first.in_reply_to_status_id? && x.first.in_reply_to_status_id == t.id }
-        if thread
-          thread << t
-          puts "adding to thread: #{thread}"
-        elsif t.in_reply_to_status_id?
-          result << [t]
-          puts "adding to result: #{result}"
+      @twitter.home_timeline.each do |tweet|
+
+        convo = convo_for tweet
+
+        if convo
+          convo << tweet
+        elsif tweet.in_reply_to_status_id?
+          @convos << [tweet]
         end
 
       end
 
-      result
+      @convos
+    end
+
+    def convo_for(tweet)
+      @convos.find do |convo|
+        tweet_is_reply_to_convo(convo, tweet) ||
+        convo_contains_tweet_with_same_reply(convo, tweet)
+      end
+    end
+
+    def tweet_is_reply_to_convo(convo, tweet)
+      convo.last.in_reply_to_status_id == tweet.id
+    end
+
+    def convo_contains_tweet_with_same_reply(convo, tweet)
+      return false unless tweet.in_reply_to_status_id
+
+      convo.find { |t| t.in_reply_to_status_id == tweet.in_reply_to_status_id }
     end
 
   end

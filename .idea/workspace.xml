@@ -26,10 +26,10 @@
     <splitter split-orientation="horizontal" split-proportion="0.42665616">
       <split-first>
         <leaf>
-          <file leaf-file-name="conversation_spec.rb" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="conversation_spec.rb" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/test/specs/conversation_spec.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="39" column="16" selection-start="741" selection-end="741" vertical-scroll-proportion="0.64260685">
+                <state line="69" column="35" selection-start="1503" selection-end="1503" vertical-scroll-proportion="0.6187807">
                   <folding />
                 </state>
               </provider>
@@ -39,10 +39,10 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="convos.rb" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="convos.rb" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/lib/tweeptalk/convos.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="18" column="37" selection-start="431" selection-end="431" vertical-scroll-proportion="0.42887175">
+                <state line="38" column="0" selection-start="719" selection-end="719" vertical-scroll-proportion="0.6458333">
                   <folding />
                 </state>
               </provider>
@@ -197,33 +197,7 @@
       <recent name="A:\dev\tweeptalk\test\specs" />
     </key>
   </component>
-  <component name="RunManager" selected="RSpec.Conversation should get the home tweets">
-    <configuration default="false" name="Conversation should get the home tweets" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
-      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
-      <module name="tweeptalk" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$/test/specs" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs />
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" track_test_folders="true" runner="rcov" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/test/specs/conversation_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Conversation should get the home tweets" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-      <RunnerSettings RunnerId="RubyRunner" />
-      <ConfigurationWrapper RunnerId="RubyRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="RSpec.Conversation">
     <configuration default="false" name="Conversation should find replies to a tweet" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="tweeptalk" />
@@ -328,6 +302,32 @@
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
+    <configuration default="false" name="Conversation" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
+      <module name="tweeptalk" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$/test/specs" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" track_test_folders="true" runner="rcov" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/test/specs/conversation_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Conversation" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
     <configuration default="true" type="RSpecRunConfigurationType" factoryName="RSpec">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="" />
@@ -415,12 +415,12 @@
       <method />
     </configuration>
     <list size="6">
-      <item index="0" class="java.lang.String" itemvalue="RSpec.Conversation should get the home tweets" />
-      <item index="1" class="java.lang.String" itemvalue="RSpec.Conversation should find replies to a tweet" />
-      <item index="2" class="java.lang.String" itemvalue="RSpec.Conversation should include the replies to the tweet" />
-      <item index="3" class="java.lang.String" itemvalue="RSpec.Conversation should include the replies to the replies" />
-      <item index="4" class="java.lang.String" itemvalue="RSpec.Specs" />
-      <item index="5" class="java.lang.String" itemvalue="RSpec.Conversation should find 2 tweet convo" />
+      <item index="0" class="java.lang.String" itemvalue="RSpec.Conversation should find replies to a tweet" />
+      <item index="1" class="java.lang.String" itemvalue="RSpec.Conversation should include the replies to the tweet" />
+      <item index="2" class="java.lang.String" itemvalue="RSpec.Conversation should include the replies to the replies" />
+      <item index="3" class="java.lang.String" itemvalue="RSpec.Specs" />
+      <item index="4" class="java.lang.String" itemvalue="RSpec.Conversation should find 2 tweet convo" />
+      <item index="5" class="java.lang.String" itemvalue="RSpec.Conversation" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -459,7 +459,7 @@
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" x="2754" y="62" width="425" height="588" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.32947582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="4513" y="2" width="1247" height="897" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.32947582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="4513" y="2" width="1247" height="897" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -549,16 +549,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/specs/conversation_spec.rb">
+    <entry file="file://$PROJECT_DIR$/lib/tweeptalk/convos.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="16" selection-start="741" selection-end="741" vertical-scroll-proportion="0.64260685">
+        <state line="38" column="0" selection-start="719" selection-end="719" vertical-scroll-proportion="0.6458333">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/tweeptalk/convos.rb">
+    <entry file="file://$PROJECT_DIR$/test/specs/conversation_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="37" selection-start="431" selection-end="431" vertical-scroll-proportion="0.42887175">
+        <state line="69" column="35" selection-start="1503" selection-end="1503" vertical-scroll-proportion="0.6187807">
           <folding />
         </state>
       </provider>
