@@ -14,7 +14,6 @@ module TweepTalk
       @convos = []
 
       @twitter.home_timeline.each do |tweet|
-
         convos = convos_for tweet
 
         if convos.count == 1

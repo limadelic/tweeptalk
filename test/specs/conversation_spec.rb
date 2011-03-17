@@ -1,5 +1,14 @@
 require File.dirname(__FILE__) + '/spec_helper'
 
+def configure_twitter
+  Twitter.configure do |config|
+    config.consumer_key = 'hEjJDY3npJ1Rh82Y1Mhtw'
+    config.consumer_secret = 'qSIPPrVIY6udxBFVmprL9zcpVaEaQPmoWijkshrYh0'
+    config.oauth_token = '260488693-0ky7I3MQL0qf3ScqjjLCJpf48AIrc84YjEAriiVi'
+    config.oauth_token_secret = 'hF0pWQ27NpP0eEzUIfeRebffwXHBIH3gSjmaoTcIrFQ'
+  end
+end
+
 describe "Conversation" do
 
   before(:each) do
@@ -80,16 +89,35 @@ describe "Conversation" do
     convos[0].should == [@reply2, @reply_to_reply, @reply, @root]
   end
 
+  it "should find unfinished convo" do
+    mock(@twitter).home_timeline do
+      [tweet, @reply2, @reply_to_reply, @reply, tweet, tweet]
+    end
+
+    convos = @sut.convos
+
+    convos.count.should == 1
+    convos[0].should == [@reply2, @reply_to_reply, @reply]
+  end
+
+  it "should print convos" do
+    pending "use to print real conversations"
+
+    configure_twitter
+    @sut = TweepTalk::Convos.new Twitter::Client.new
+    convos = @sut.convos
+    convos.each do |c|
+      puts "c"
+      c.each do |t|
+        puts "t = [id = #{t.id}, reply = #{t.in_reply_to_status_id}, content = #{t.text}"
+      end
+    end
+  end
+
   it "should get the home tweets" do
     pending "use to play with api"
 
-    Twitter.configure do |config|
-      config.consumer_key = '2hEjJDY3npJ1Rh82Y1Mhtw1'
-      config.consumer_secret = '9qSIPPrVIY6udxBFVmprL9zcpVaEaQPmoWijkshrYh00'
-      config.oauth_token = '260488693-0ky7I3MQL0qf3ScqjjLCJpf48AIrc84YjEAriiVi71'
-      config.oauth_token_secret = '7hF0pWQ27NpP0eEzUIfeRebffwXHBIH3gSjmaoTcIrFQ1'
-    end
-
+    configure_twitter
     Twitter.home_timeline.take(1).each { |t| puts "#{t} - #{t.from_user}: #{t.text}" }
   end
 end
