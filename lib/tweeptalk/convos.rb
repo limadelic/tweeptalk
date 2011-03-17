@@ -15,10 +15,12 @@ module TweepTalk
 
       @twitter.home_timeline.each do |tweet|
 
-        convo = convo_for tweet
+        convos = convos_for tweet
 
-        if convo
-          convo << tweet
+        if convos.count == 1
+          convos[0] << tweet
+        elsif convos.count > 1
+          merge convos, tweet
         elsif tweet.in_reply_to_status_id?
           @convos << [tweet]
         end
@@ -28,8 +30,13 @@ module TweepTalk
       @convos
     end
 
-    def convo_for(tweet)
-      @convos.find do |convo|
+    def merge(convos, tweet)
+      convos.each {|c| @convos.delete c }
+      @convos << convos.flatten + [tweet]
+    end
+
+    def convos_for(tweet)
+      @convos.find_all do |convo|
         tweet_is_reply_to_convo(convo, tweet) ||
         convo_contains_tweet_with_same_reply(convo, tweet)
       end

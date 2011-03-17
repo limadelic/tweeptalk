@@ -69,7 +69,6 @@ describe "Conversation" do
   end
 
   it "should find convo with 2 levels of replies to tweet" do
-    pending "hold ur horses"
 
     mock(@twitter).home_timeline do
       [tweet, @reply2, @reply_to_reply, @reply, tweet, @root, tweet]
